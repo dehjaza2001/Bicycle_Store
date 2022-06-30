@@ -1,0 +1,172 @@
+{
+  "xeDap" :[
+    {
+      "id" : 1,
+      "name" : "Xe đạp địa hình Phoenix Echo 5.5-7",
+      "price" : "3.400.000" ,
+      "category" : "xe địa hình",
+      "image_url" : "https://salt.tikicdn.com/cache/400x400/ts/product/27/11/62/5155020ecdbab7fe7c63dfe880f38c12.png.webp",
+      "description" : "Khung xe được chế tạo từ thép, giúp xe vận hành chắc chắn hơn, tăng độ bền hơn.Được phủ một lớp sơn tĩnh điện chống xước và làm bóng xe.Lốp xe được đặt hàng trực tiếp tại  hãng, đảm bảo độ bền cao, bám đường tốt và ít bị mài mòn nhất.Phuộc nhúng giảm chấn siêu đàn hồi, bảo vệ hê xương khớp tốt nhất."
+    },
+    {
+      "id" : 2,
+      "name" : "XE ĐẠP ĐỊA HÌNH FORNIX FN26",
+      "price" :"4.490.000",
+      "category" : "xe địa hình",
+      "image_url" : "https://salt.tikicdn.com/cache/400x400/ts/product/ce/4f/09/3e031d17b80d8779ace992a9d57363dd.jpg.webp",
+      "description" : "Sức khoẻ là một vấn đề đang được mọi người quan tâm nhiều. Để nâng cao sức khoẻ, tăng cường sức đề kháng, ngoài việc có một chế độ ăn uống hợp lý thì luyện tập thể dục thể thao là lựa chọn hàng đầu hiện nay của mọi người. Bộ môn đạp xe đạp là một trong những bộ môn thể thao được nhiều người lựa chọn, vì ngoài giúp rèn luyện sức khoẻ, còn giúp chúng ta đảm bảo an toàn của bản thân trong thời buổi dịch bệnh như hiện nay.Hiểu được nhu cầu của mọi người, Fornix không ngừng cho ra mắt những mẫu xe đạp mới để đáp ứng với nhu cầu thị trường. Hôm nay, Fornix xin giới thiệu mẫu xe đạp địa hình hoàn toàn mới – xe đạp Fornix FN26 ."
+    },
+    {
+      "id" : 3,
+      "name" : "Xe đạp địa hình Thống Nhất MTB 24-04",
+      "price" :"3.250.000",
+      "category" : "xe địa hình",
+      "image_url" : "https://salt.tikicdn.com/cache/400x400/ts/product/b7/b3/22/93af4d00cc7e7317d4cb535ac38a1968.jpg.webp",
+      "description" : "Xe mới 100% đúng theo quy chuẩn của nhà máy .Xe được đóng gói trong thùng cacton . Khung sườn bọc chống sốc chống sước trước khi cho vào thùng.Sản phẩm đã được Shop lắp ráp 90%( ngoại trừ bánh trước, tay lái và giỏ xe shop thu gọn vào khung xe)"
+    },
+    {
+      "id" : 4,
+      "name" : "Xe Đạp Thể Thao Địa Hình XT300 ",
+      "price" :"5.400.000",
+      "category" : "xe địa hình",
+      "image_url" : "https://salt.tikicdn.com/cache/400x400/ts/product/ab/0d/75/2833a6a88a2c9af840a0576940fc1e6c.jpg.webp",
+      "description" : " Mã sản phẩm: XT300.Màu sắc: Xanh đạm,đen trắng,đen đỏ,xanh trắng.Chất liệu khung xe đạp địa hình: Hợp kim nhôm.Tải trọng tối đa: 120kg.- Vành xe: 26 Hợp kim nhôm 2 lớp.Càng xe: Phuộc giảm xóc có khóa điều chỉnh hành trình trên ghidong.Khung xe :Hợp kim nhôm 6061, size khung 17"
+    },
+    {
+      "id" : 5,
+      "name" : "Xe đạp Thống Nhất GN 06-24 ",
+      "price" :"2.130.000",
+      "category" : "xe thời trang",
+      "image_url" : "https://salt.tikicdn.com/cache/400x400/ts/product/fa/c3/d9/219fad5f852438e1d4180e46680afe5c.jpg.webp",
+      "description" : "Xe mới 100% đúng theo quy chuẩn của nhà máy .Xe được đóng gói trong thùng cacton . Khung sườn bọc chống sốc chống sước trước khi cho vào thùng.Sản phẩm đã được Shop lắp ráp 90%( ngoại trừ bánh trước, tay lái và giỏ xe shop thu gọn vào khung xe)"
+    },
+    {
+      "id" : 6,
+      "name" : "Xe đạp nữ GIANT INEED COLORFUL 24 ",
+      "price" :"6.700.000",
+      "category" : "xe thời trang",
+      "image_url" : "https://salt.tikicdn.com/cache/400x400/ts/product/ce/ca/e7/4e49b782bd485ddbc64cc6ab8f905ed1.jpg.webp",
+      "description" : "Xe đạp nữ GIANT INEED COLORFUL 24.Giá sản phẩm trên đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng)..."
+    },
+    {
+      "id" : 7,
+      "name" : "Xe đạp đường phố cổ điển City Phoenix YUMO ",
+      "price" :"3.200.000",
+      "category" : "xe thời trang",
+      "image_url" : "https://salt.tikicdn.com/cache/400x400/ts/product/22/1f/3c/397af1d0d2ac7444ae21d2dcb042f134.jpeg.webp",
+      "description" : "Phong cách dịu dàng, màu sắc thanh lịch với 4 phiên bản màu tươi sáng, đẹp mắt kết hợp cùng kiểu dáng nữ tính nhưng cũng không kém phần sành điệu, Xe đạp đường phố cổ điển City Phoenix YUMO 26 inch phù hợp để các bạn sử dụng đi học, đi làm hằng ngày hoặc vi vu dạo phố vào những buổi chiều mát mẻ.Ghi đông bằng hợp kim nhôm bền bỉ với thiết kế nhỏ gọn giúp người dùng xử lý tốt những tình huống bất ngờ gặp trên đường phố. Ngoài ra kiểu dáng ghi đông uốn cong lên giúp người dùng giữ tư thế thẳng lưng, hạn chế mỏi cơ khi di chuyển đường dài."
+    },
+    {
+      "id" : 8,
+      "name" : "Xe đạp điện gấp gọn Homesheel Airwheel R6 ",
+      "price" :"14.000.000",
+      "category" : "xe đạp điện",
+      "image_url" : "https://salt.tikicdn.com/cache/400x400/ts/product/e4/f8/e9/8cb0e58a058cacedc42e0491935ea97f.jpg.webp",
+      "description" : "Mạnh mẽ, sang trọng, linh hoạt, chống sóc, hiệu năng là những mỹ từ dành cho Homesheel AIRWHEEL R6. Một chiếc xe thời trang mạnh mẽ nhất của Homehseel Hiện Nay.Xe điện thể thao gấp gọn siêu phẩm HOMESHEEL AIRWHEEL R6 trang bị đèn trước siêu led thế hệ mới, giúp bạn đi ban đêm tốt hơn. Màu sắc xe Xe điện thể thao gấp gọn siêu phẩm HOMESHEEL AIRWHEEL R6 được sơn tĩnh điện tạo điểm nhấn sang trọng mà khi bạn sở hữu bạn sẽ cảm nhận được. Động cơ 250.HOMESHEEL KÉP thực sự mạnh mẽ có thể lướt qua mọi cung đường khó đi.Tốc độ lên đến 30km, bạn hoàn toàn bị chinh phục bởi Xe điện thể thao gấp gọn siêu phẩm HOMESHEEL AIRWHEEL R6. Một chiếc xe hội tụ đủ các yếu tố thời trang, mạnh mẽ, phong cách, đẳng cấp"
+    },
+    {
+      "id" : 9,
+      "name" : "Xe điện Hot Girl Lihaze ",
+      "price" :"13.000.000",
+      "category" : "xe đạp điện",
+      "image_url" : "https://salt.tikicdn.com/cache/400x400/ts/product/e4/2b/92/1291bc6f75fe53962dd532b87c599b92.jpg.webp",
+      "description" : "Xe máy điện hot girl được trang bị chạy pin Lithium 48V-15AQuãng đường tối đa cho 1 lần sạc lên đến 60~70km, trợ lực có thể lên đến 80kmTốc độ tối đa của xe đạt mức chuẩn quốc gia đối với dòng xe điện mini 25km/h ~ 35km/h (Tùy Địa Hình)Tải trọng xe điện hotgirl lên đến 250kg. Xe điện Hot Girl Lihaze được trang bị động cơ 400W, cho phép leo dốc 30 độ.Thân xe thiết kế nhỏ, gọn, nhẹ, có thể gấp gọn để trong cốp sau xe ô tô."
+    },
+    {
+      "id" : 10,
+      "name" : "Xe Đạp Điện Gấp Homesheel T5S 10AH ",
+      "price" :"12.000.000",
+      "category" : "xe đạp điện",
+      "image_url" : "https://salt.tikicdn.com/cache/400x400/ts/product/8b/9e/84/fdf4981e3ff13d0c500d94fdea21c238.jpg.webp",
+      "description" : "Xe đạp điện chính hãng Homesheel T5S 2022 là xe đạp trợ lực điện gấp gọn được rất nhiều phụ huynh quan tâm mua cho con đi học và đồng hành cùng trong những chuyến du lịch.Xe đạp điện gấp này có thiết kế nhỏ gọn, động cơ mạnh mẽ, hệ thống đèn còi cảnh báo vô cùng thông minh. Đây chắc chắn sẽ là chiếc xe đạp điện quốc dân có thể đáp ứng mọi nhu cầu hàng ngày từ đi học, đi làm và tập thể dục. Nếu bạn đang muốn mua xe đạp điện chính hãng thì hãy tham khảo ngay dòng xe này nhé."
+    },
+    {
+      "id" : 11,
+      "name" : "Xe điện cân bằng loại đặc biệt 8 inch",
+      "price" :"4.500.000",
+      "category" : "xe điện cân bằng",
+      "image_url" : "https://salt.tikicdn.com/cache/400x400/ts/product/c4/96/7b/1eae663df455ea28940f0cbb73f47257.jpg.webp",
+      "description" : "Model: Xe điện X8.Max load ( tải trọng chịu được) 150KG.Công xuất 800w.Tốc độ 25KM/H nhanh nhất hiện nay.Phiên bản Phiên bản 2018.Trọng lượng xe 11.5kg.Kích thước bánh 8 inch.Kiểu bánh Bánh đặc.Dung lượng pin 4400MAH.Vi xử lý cân bằng thông minh Pro 64 bit.Thời gian sạc đầy 120 phút.Quãng đường/lần sạc 34Km (pin tái chế chỉ đi được 5-10KM)"
+    },
+    {
+      "id" : 12,
+      "name" : "Xe điện cân bằng Mini Robot ",
+      "price" :"3.450.000",
+      "category" : "xe điện cân bằng",
+      "image_url" : "https://salt.tikicdn.com/cache/400x400/ts/product/25/c1/5d/fd5b7f240a037b74426aa188873cdb37.jpg.webp",
+      "description" : "Anspeed A13 có thể di chuyển trên mọi địa hình như đường gồ ghề sỏi đá, đường dốc, trời mưa hay bề mặt láng như gạch men cũng không hề trơn trượt. Mang đến sự an toàn tuyệt đối cho bạn khi sử dụng.Di chuyển khi trời tối thì sao? Không vấn đề gì với ninebot mini cả, được trang bị bộ đèn LED dưới nơi để chân, ánh sáng đủ để bạn và người khác có thể dễ dàng thấy với ánh sáng phát xa đến 5 mét. Khi giảm tốc độ thì đèn đỏ, di chuyển thông thường đèn xanh và khi bạn quẹo cua đèn vàng (bạn có thể điều chỉnh màu đèn hậu) sẽ bật theo hướng của bạn, cực kỳ an toàn, cực kỳ đẹp."
+    },
+    {
+      "id" : 13,
+      "name" : "Xe điện cân bằng Homesheel G2 GYROOR",
+      "price" :"6.290.000",
+      "category" : "xe điện cân bằng",
+      "image_url" : "https://salt.tikicdn.com/cache/400x400/ts/product/3a/08/66/640f467fec7838cf23f9f15dcd5740ee.jpg.webp",
+      "description" : "Thiết kế mạnh mẽ: Thiết kế dựa trên cảm hứng áo giáp siêu anh hùng thế hệ mới.An toàn Hoverboard.Chứng nhận UL2272, pin LG / Samsung. Hoàn toàn phù hợp với tiêu chuẩn an toàn. Và đã thông qua chứng nhận CE, RoHS, FCC.Công nghệ tự cân bằng.Tự cân bằng, an toàn hơn, dễ đi hơn cho người mới chơi.Điều chỉnh tốc độ : từ tối thiểu đến tối đa trong ứng dụng, để đảm bảo tốc độ đi xe an toàn cho từng đối tượng.Cấu trúc chắc chắn: Thân máy là tấm nhôm 85% với một số bộ phận ABS, chắc chắn hơn và an toàn hơn."
+    },
+    {
+      "id" : 14,
+      "name" : "Xe điện cân bằng 2 bánh phát sáng GIO36",
+      "price" :"3.900.000",
+      "category" : "xe điện cân bằng",
+      "image_url" : "https://salt.tikicdn.com/cache/400x400/ts/product/82/85/f0/05e449c51083e8dd4df026e8a2f1b2db.jpg.webp",
+      "description" : "Thiết kế hiện đại, cá tính.Có Tay cầm điều khiển và bộ bảo vệ tay chân đi kèm.Tay cầm có thể tháo rời ra. Có thể kéo dài từ 40 - 115cm.Hệ thống đèn LED rực rỡ.Có thể kết nối Bluetooth với Điện thoại để phát nhạc.Hệ thống Loa vòm cho âm thanh sống động, chân thực.Trang bị Lốp xe cao cấp, độ ma sát cao. Bàn để chân cao su chống trượt, giúp đứng vững và dàng giữ cân bằng hơn.Có vận tốc lớn, dễ dàng leo dốc.Thoải mái di chuyển, vận động."
+    },
+    {
+      "id" : 15,
+      "name" : "Xe đạp ba bánh bình nước trẻ em",
+      "price" :"295.000",
+      "category" : "xe trẻ em ",
+      "image_url" : "https://salt.tikicdn.com/cache/400x400/ts/product/98/64/d8/e4e72a20d1ddf2bdafd0f73f94e3d37a.jpg.webp",
+      "description" : " Xe được làm từ khung thép chịu lực, sơn an toàn cho trẻ nhỏ.Phía sau xe có bình nước trang trí đẹp mắt.Xe đạp ba bánh hay còn gọi là xe cút kít được thiết kế với 3 bánh cân bằng và bàn đạp ở bánh trước giúp bé rèn luyện khả năng vận động.Xe có nhiều màu sắc để lựa chọn : Xe ba bánh cho bé gái thì có màu hồng, xanh, vàng, xe ba bánh cho bé trai thì có màu xanh, đỏ và vàng.Xe ba bánh vừa giúp bé rèn luyện khả năng vận động còn giúp bé rèn luyện sự phản xạ.Bánh xe có vân bám đường chống trơn trượt."
+    },
+    {
+      "id" : 16,
+      "name" : "Xe Đạp Trẻ Em Jianer J9",
+      "price" :"1.990.000",
+      "category" : "xe trẻ em",
+      "image_url" : "https://salt.tikicdn.com/cache/400x400/ts/product/c5/d2/eb/62ebb4bb679f3a01488e17f5006c8a38.png.webp",
+      "description" : "Xe Đạp Trẻ Em Jianer J9 cao cấp phù hợp cho các bé từ 2 - 7 tuổi.Khung : Đúc nguyên khối bằng hợp kim Magiê siêu nhẹ, thiết kế độc đáo, dây chạy âm sườn.Vành : đúc ( mâm ) bằng hợp kim nhôm 3 chấu.Có giảm xóc ( phuộc nhún ).Tay lái có thể gập lại và điều chỉnh xa gần phù hợp với cơ thể bé.Có đồng hồ theo dõi thời gian lắp trên tay lái.Phanh ( thắng ) : Đĩa trước và sau."
+    },
+    {
+      "id" : 17,
+      "name" : "Xe Đạp Trẻ Em LanQ FD J9 ",
+      "price" :"1.990.000",
+      "category" : "xe trẻ em",
+      "image_url" : "https://salt.tikicdn.com/cache/400x400/ts/product/98/e5/2c/fc32f3c178796b74898e78af4d59698b.png.webp",
+      "description" : "Xe Đạp Trẻ Em LanQ FD J9 cao cấp phù hợp cho các bé từ 2 - 9 tuổi.Khung : Đúc nguyên khối bằng hợp kim Magiê siêu nhẹ, thiết kế độc đáo, dây chạy âm sườn.Vành : đúc ( mâm ) bằng hợp kim nhôm 3 chấu.Có giảm xóc ( phuộc nhún ).Tay lái có thể gập lại và điều chỉnh xa gần phù hợp với cơ thể bé.Có đồng hồ theo dõi thời gian lắp trên tay lái.Phanh ( thắng ) : Đĩa trước và sau."
+    },
+    {
+      "id" : 18,
+      "name" : "Xe Đạp Trẻ Em Jianer S9 ",
+      "price" :"2.990.000",
+      "category" : "xe trẻ em",
+      "image_url" : "https://salt.tikicdn.com/cache/400x400/ts/product/d2/5d/c2/072a31441beac9622689e4afc0c1e860.png.webp",
+      "description" : "Xe Đạp Trẻ Em Jianer S9 cao cấp phù hợp cho các bé từ 2 - 9 tuổi.Khung : Đúc nguyên khối bằng hợp kim Magiê siêu nhẹ, thiết kế độc đáo, dây chạy âm sườn.Vành : đúc ( mâm ) bằng hợp kim nhôm 3 chấu.Có giảm xóc ( phuộc nhún ).Tay lái có thể gập lại và điều chỉnh xa gần phù hợp với cơ thể bé.Có đồng hồ theo dõi thời gian lắp trên tay lái.Phanh ( thắng ) : Đĩa trước và sau."
+    },
+    {
+      "id" : 19,
+      "name" : "Xe Đạp Tập Thể Dục Airibike MK -291",
+      "price" :"3.890.000",
+      "category" : "xe thể dục",
+      "image_url" : "https://salt.tikicdn.com/cache/400x400/ts/product/11/29/2e/d5faaa269fe93ee75a32d4f5eaa058ff.JPG.webp",
+      "description" : "XE ĐẠP THỂ DỤC AIRBIKE SPORT. Sản phẩm chuyên dụng trong các phòng tập gym, các trung tâm thể dục thể thao cộng đồng, Các trung tâm tập vật lý trị liệu. Xe Đạp Tập Thể Tại chỗ với các tính năng hiện đại. Được thiết kế mạnh mẽ, Khung sườn chắc chắn Kiểu dáng thể thao,màu sắc nổi bật với mọi không gian gia đình."
+    },
+    {
+      "id" : 20,
+      "name" : "Xe Đạp Thể Dục Thể Thao Trong Nhà",
+      "price" :"3.890.000",
+      "category" : "xe thể dục",
+      "image_url" : "https://salt.tikicdn.com/cache/100x100/ts/product/c5/03/a0/b7a0484f58ba50d82d202c77e1802544.png.webp",
+      "description" : "Kích thước đóng gói: 86 x 20 x 73 (cm).Trọng lượng xe: 20 kgs.Bánh đà: 1.5kgs.Tải trọng chịu lực: 200kg.Chuyển động bằng dây curoa.Bàn đạp chống trượt.Tay cầm bọc mút cao cấp.Mặt bảng đồng hồ điện tử thể hiện các thông số: thời gian, quãng đường, tốc độ, calories.Độ cao yên, tay cầm có thể điều chỉnh linh hoạt."
+    },
+    {
+      "id" : 21,
+      "name" : "BG Xe đạp tập thể dục EXERCISE BIKE YS-04",
+      "price" :"2.099.000",
+      "category" : "xe thể dục",
+      "image_url" : "https://salt.tikicdn.com/cache/400x400/ts/product/c8/0e/90/f85f4dbb2afbbb856fbf370731365e29.jpg.webp",
+      "description" : "Tất cả sản phẩm cảu shop đều tự lắp ráp : có hướng dẫn + dụng cụ kèm theo.Cực kỳ dễ dàng lắp ráp dành 15 - 30 phút để hoàn thiện sản phẩm.Có đính kèm link hướng dẫn hoặc tham khảo youtube.Màn hình LED để hiển thị tốc độ, thời gian, lượng calo tiêu thụ,…Với dây đeo mắt cá chân cho an toàn.Có thể điều chỉnh mức kháng cự. Bảo hành 12 tháng.Chiều cao ghế có thể điều chỉnh cao - thấp theo thể trạng của người tập.Tải trọng người tập lên tới 120kg.Đặc biệt nhất xe có thêm phần ghế tựa lưng với phần đệm tựa dày, mềm mại giúp người ngồi luyện tập cảm thấy cực thoải mái.Xe chạy bằng dây curoa nên cực êm. Có khoang để điện thoại.Kích thước sản phẩm: cao (106 – 125cm) x rộng  53cm  x ngang (40 – 70cm)."
+    }
+  ]
+}
