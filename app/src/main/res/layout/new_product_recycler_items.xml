@@ -2,12 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/newProduct"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:id="@+id/newProduct">
+    android:background="#D2F3F2F2"
+    android:backgroundTint="#FFFFFF">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:backgroundTint="#EAE9E9">
 
         <ImageView
             android:id="@+id/imageView"
@@ -15,7 +20,7 @@
             android:layout_height="159dp"
             android:layout_marginStart="8dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/bic1" />
@@ -25,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
-            android:layout_marginTop="140dp"
+            android:layout_marginTop="152dp"
             android:text="Xe đạp địa hình \nPhoenix Echo 5.5-7"
             android:textColor="#050404"
             app:layout_constraintEnd_toEndOf="@+id/imageView"
@@ -38,7 +43,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
-            android:layout_marginTop="4dp"
             android:text="3.400.000 đ"
             android:textColor="#DC1111"
             app:layout_constraintStart_toStartOf="@+id/imageView"
