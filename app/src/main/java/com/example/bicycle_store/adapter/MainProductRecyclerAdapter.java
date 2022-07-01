@@ -1,6 +1,7 @@
 package com.example.bicycle_store.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.bicycle_store.DetailsScreen;
 import com.example.bicycle_store.R;
 import com.example.bicycle_store.model.MainProduct;
 //import com.example.bicycle_store.model.NewProduct;
@@ -44,6 +46,20 @@ public class MainProductRecyclerAdapter extends RecyclerView.Adapter<MainProduct
         mainProductViewHolder.price.setText(mainProductList.get(i).getPrice());
         mainProductViewHolder.category.setText(mainProductList.get(i).getCategory());
         Glide.with(context).load(mainProductList.get(i).getImage_url()).into(mainProductViewHolder.itemImage);
+
+        mainProductViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, DetailsScreen.class);
+                intent.putExtra("image_url",mainProductList.get(mainProductViewHolder.getAdapterPosition()).getImage_url());
+                intent.putExtra("name",mainProductList.get(mainProductViewHolder.getAdapterPosition()).getName());
+                intent.putExtra("price",mainProductList.get(mainProductViewHolder.getAdapterPosition()).getPrice());
+                intent.putExtra("category",mainProductList.get(mainProductViewHolder.getAdapterPosition()).getCategory());
+                intent.putExtra("description",mainProductList.get(mainProductViewHolder.getAdapterPosition()).getDescription());
+                context.startActivity(intent);
+
+            }
+        });
     }
 
     @Override

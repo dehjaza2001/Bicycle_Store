@@ -6,6 +6,7 @@ import android.os.Bundle;
 //import android.support.v7.widget.LinearLayoutManager;
 //import android.support.v7.widget.RecyclerView;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -25,6 +26,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
+
     private RecyclerView recyclerView , mainProductRecyclerView;
     NewProductRecyclerAdapter newProductRecyclerAdapter;
     MainProductRecyclerAdapter mainProductRecyclerAdapter;
@@ -35,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//        ActionBar actionBar = getSupportActionBar();
+//        actionBar.hide();
+
 
 
         // recycler view new product
@@ -45,9 +51,9 @@ public class MainActivity extends AppCompatActivity {
         try {
             JSONObject jsonObject = new JSONObject(JsonDataFromAsset(getApplicationContext(),"data.json"));
             JSONArray jsonArray = jsonObject.getJSONArray("xeDap");
-            for(int i = 0 ; i < 13 ; i += 3){
+            for(int i = 0 ; i <= 15 ; i += 3){
                 JSONObject xedapData = jsonArray.getJSONObject(i);
-                NewProduct product = new NewProduct(xedapData.getString("name"),xedapData.getString("price"),xedapData.getString("category"),xedapData.getString("image_url"),"");
+                NewProduct product = new NewProduct(xedapData.getString("name"),xedapData.getString("price"),xedapData.getString("category"),xedapData.getString("image_url"),xedapData.getString("description"));
                 newProductList.add(product);
             }
         } catch (JSONException e) {
@@ -67,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
             JSONArray jsonArray = jsonObject.getJSONArray("xeDap");
             for(int i = 0 ; i < jsonArray.length() ; i++){
                 JSONObject xedapData = jsonArray.getJSONObject(i);
-                MainProduct product = new MainProduct(xedapData.getString("name"),xedapData.getString("price"),xedapData.getString("category"),xedapData.getString("image_url"),"");
+                MainProduct product = new MainProduct(xedapData.getString("name"),xedapData.getString("price"),xedapData.getString("category"),xedapData.getString("image_url"),xedapData.getString("description"));
                 mainProductList.add(product);
             }
         } catch (JSONException e) {
