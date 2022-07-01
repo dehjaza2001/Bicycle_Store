@@ -1,6 +1,7 @@
 package com.example.bicycle_store;
 
 //import android.support.v7.app.AppCompatActivity;
+import android.content.Context;
 import android.os.Bundle;
 //import android.support.v7.widget.LinearLayoutManager;
 //import android.support.v7.widget.RecyclerView;
@@ -14,6 +15,12 @@ import com.example.bicycle_store.adapter.NewProductRecyclerAdapter;
 import com.example.bicycle_store.model.MainProduct;
 import com.example.bicycle_store.model.NewProduct;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,14 +42,18 @@ public class MainActivity extends AppCompatActivity {
         mainProductRecyclerView = findViewById(R.id.mainProductRecyclerView);
         newProductList = new ArrayList<>();
 
-        NewProduct product1 = new NewProduct("XE ĐẠP FORNIX FN26","4.490.000","xeDiaHinh","https://salt.tikicdn.com/cache/400x400/ts/product/ce/4f/09/3e031d17b80d8779ace992a9d57363dd.jpg.webp","");
-        NewProduct product2 = new NewProduct("XE ĐẠP FORNIX FN26","4.490.000","xeDiaHinh","https://salt.tikicdn.com/cache/400x400/ts/product/ce/4f/09/3e031d17b80d8779ace992a9d57363dd.jpg.webp","");
-        NewProduct product3 = new NewProduct("XE ĐẠP FORNIX FN26","4.490.000","xeDiaHinh","https://salt.tikicdn.com/cache/400x400/ts/product/ce/4f/09/3e031d17b80d8779ace992a9d57363dd.jpg.webp","");
-        NewProduct product4 = new NewProduct("XE ĐẠP FORNIX FN26","4.490.000","xeDiaHinh","https://salt.tikicdn.com/cache/400x400/ts/product/ce/4f/09/3e031d17b80d8779ace992a9d57363dd.jpg.webp","");
-        newProductList.add(product1);
-        newProductList.add(product2);
-        newProductList.add(product3);
-        newProductList.add(product4);
+        try {
+            JSONObject jsonObject = new JSONObject(JsonDataFromAsset(getApplicationContext(),"data.json"));
+            JSONArray jsonArray = jsonObject.getJSONArray("xeDap");
+            for(int i = 0 ; i < 13 ; i += 3){
+                JSONObject xedapData = jsonArray.getJSONObject(i);
+                NewProduct product = new NewProduct(xedapData.getString("name"),xedapData.getString("price"),xedapData.getString("category"),xedapData.getString("image_url"),"");
+                newProductList.add(product);
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
 
         newProductRecyclerAdapter = new NewProductRecyclerAdapter(this,newProductList);
         recyclerView.setHasFixedSize(true);
@@ -51,23 +62,41 @@ public class MainActivity extends AppCompatActivity {
         newProductRecyclerAdapter.notifyDataSetChanged();
 
         mainProductList = new ArrayList<>();
-        MainProduct mainProduct1 = new MainProduct("Xe điện cân bằng Mini Robot","3.450.000","xe điện cân bằng","https://salt.tikicdn.com/cache/400x400/ts/product/25/c1/5d/fd5b7f240a037b74426aa188873cdb37.jpg.webp","");
-        MainProduct mainProduct2 = new MainProduct("Xe điện cân bằng Mini Robot","3.450.000","xe điện cân bằng","https://salt.tikicdn.com/cache/400x400/ts/product/25/c1/5d/fd5b7f240a037b74426aa188873cdb37.jpg.webp","");
-        MainProduct mainProduct3 = new MainProduct("Xe điện cân bằng Mini Robot","3.450.000","xe điện cân bằng","https://salt.tikicdn.com/cache/400x400/ts/product/25/c1/5d/fd5b7f240a037b74426aa188873cdb37.jpg.webp","");
-        MainProduct mainProduct4 = new MainProduct("Xe điện cân bằng Mini Robot","3.450.000","xe điện cân bằng","https://salt.tikicdn.com/cache/400x400/ts/product/25/c1/5d/fd5b7f240a037b74426aa188873cdb37.jpg.webp","");
-        MainProduct mainProduct5 = new MainProduct("Xe điện cân bằng Mini Robot","3.450.000","xe điện cân bằng","https://salt.tikicdn.com/cache/400x400/ts/product/25/c1/5d/fd5b7f240a037b74426aa188873cdb37.jpg.webp","");
-
-        mainProductList.add(mainProduct1);
-        mainProductList.add(mainProduct2);
-        mainProductList.add(mainProduct3);
-        mainProductList.add(mainProduct4);
-        mainProductList.add(mainProduct5);
+        try {
+            JSONObject jsonObject = new JSONObject(JsonDataFromAsset(getApplicationContext(),"data.json"));
+            JSONArray jsonArray = jsonObject.getJSONArray("xeDap");
+            for(int i = 0 ; i < jsonArray.length() ; i++){
+                JSONObject xedapData = jsonArray.getJSONObject(i);
+                MainProduct product = new MainProduct(xedapData.getString("name"),xedapData.getString("price"),xedapData.getString("category"),xedapData.getString("image_url"),"");
+                mainProductList.add(product);
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
         mainProductRecyclerAdapter = new MainProductRecyclerAdapter(this,mainProductList);
         mainProductRecyclerView.setHasFixedSize(true);
         mainProductRecyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
         mainProductRecyclerView.setAdapter(mainProductRecyclerAdapter);
         mainProductRecyclerAdapter.notifyDataSetChanged();
+
+
+    }
+
+    private String JsonDataFromAsset(Context context, String fileName) {
+        String  json = null;
+        try {
+            InputStream inputStream = context.getAssets().open(fileName);
+            int sizeOfFile = inputStream.available();
+            byte[]  bufferData = new byte[sizeOfFile];
+            inputStream.read(bufferData);
+            inputStream.close();
+            json = new String(bufferData,"UTF-8");
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+        return json;
 
 
     }
