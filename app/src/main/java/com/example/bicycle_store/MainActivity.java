@@ -3,6 +3,8 @@ package com.example.bicycle_store;
 //import android.support.v7.app.AppCompatActivity;
 import android.content.Context;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 //import android.support.v7.widget.LinearLayoutManager;
 //import android.support.v7.widget.RecyclerView;
 
@@ -85,6 +87,16 @@ public class MainActivity extends AppCompatActivity {
         mainProductRecyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
         mainProductRecyclerView.setAdapter(mainProductRecyclerAdapter);
         mainProductRecyclerAdapter.notifyDataSetChanged();
+
+        // get location for the chain store
+
+        ImageView locationView = findViewById(R.id.location);
+        locationView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
 
     }

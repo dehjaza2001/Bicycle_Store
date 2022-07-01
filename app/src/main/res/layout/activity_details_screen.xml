@@ -7,7 +7,7 @@
     tools:context=".DetailsScreen">
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/back_button"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginStart="16dp"
@@ -86,24 +86,24 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buyNow"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="176dp"
-        android:layout_height="58dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="54dp"
+        android:layout_marginBottom="60dp"
         android:background="#CF7373"
         android:text="BUY NOW"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/addToCart"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="176dp"
-        android:layout_height="58dp"
+        android:layout_height="60dp"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="54dp"
+        android:layout_marginBottom="60dp"
         android:background="#FFCF7373"
         android:text="ADD TO CART"
         app:layout_constraintBottom_toBottomOf="parent"
