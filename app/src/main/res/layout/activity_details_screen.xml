@@ -66,7 +66,7 @@
         android:layout_width="match_parent"
         android:layout_height="151dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="4dp"
         android:scrollbars="vertical"
         android:text="Khung xe được chế tạo từ thép, giúp xe vận hành chắc chắn hơn, tăng độ bền hơn.Được phủ một lớp sơn tĩnh điện chống xước và làm bóng xe.Lốp xe được đặt hàng trực tiếp tại  hãng, đảm bảo độ bền cao, bám đường tốt và ít bị mài mòn nhất.Phuộc nhúng giảm chấn siêu đàn hồi, bảo vệ hê xương khớp tốt nhất."
         android:textSize="18sp"
@@ -78,7 +78,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginBottom="140dp"
+        android:layout_marginBottom="128dp"
         android:text="3.400.000"
         android:textColor="#F84848"
         android:textSize="44sp"
@@ -93,7 +93,9 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="60dp"
         android:background="#CF7373"
+        android:fontFamily="@font/lilita_one"
         android:text="BUY NOW"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -105,7 +107,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginBottom="60dp"
         android:background="#FFCF7373"
+        android:fontFamily="@font/lilita_one"
         android:text="ADD TO CART"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -117,7 +121,7 @@
         android:layout_marginTop="4dp"
         android:text="xe dia hinh"
         android:textColor="#8A8787"
-        android:textSize="14sp"
+        android:textSize="15sp"
         android:textStyle="italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detail_name" />
