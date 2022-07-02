@@ -49,7 +49,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 //        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
 //        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
         LatLng hcmus = new LatLng(10.762913,106.6799776);
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(hcmus));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(hcmus,15));
 
         LatLng store1 = new LatLng(10.77027,106.6894009);
         LatLng store2 = new LatLng(10.767837176855316, 106.69485023977057);
@@ -57,11 +57,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng store4 = new LatLng(10.355224949656709, 107.09614781495824);
         LatLng store5 = new LatLng(10.754559414351004, 106.657145595158);
 
-        mMap.addMarker((new MarkerOptions().position(store1).title("Store 1")));
+        mMap.addMarker((new MarkerOptions().position(store1).title("Store 6")));
         mMap.addMarker((new MarkerOptions().position(store2).title("Store 2")));
         mMap.addMarker((new MarkerOptions().position(store3).title("Store 3")));
         mMap.addMarker((new MarkerOptions().position(store4).title("Store 4")));
-        mMap.addMarker((new MarkerOptions().position(hcmus).title("Store 5")));
+        mMap.addMarker((new MarkerOptions().position(store5).title("Store 5")));
+        mMap.addMarker((new MarkerOptions().position(hcmus).title("Main Store")));
 
 
     }
