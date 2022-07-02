@@ -5,6 +5,16 @@ public class MainProduct {
     private String price;
     private String category;
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    private String id;
+
     public String getName() {
         return name;
     }
@@ -48,12 +58,13 @@ public class MainProduct {
     private String image_url;
     private String description;
 
-    public MainProduct(String name, String price, String category, String image_url, String description) {
+    public MainProduct(String name, String price, String category, String image_url, String description , String id) {
         this.name = name;
         this.price = price;
         this.category = category;
         this.image_url = image_url;
         this.description = description;
+        this.id = id;
     }
 
 

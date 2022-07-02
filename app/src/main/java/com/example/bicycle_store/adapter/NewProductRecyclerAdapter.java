@@ -51,6 +51,7 @@ public class NewProductRecyclerAdapter extends RecyclerView.Adapter<NewProductRe
             public void onClick(View view) {
                 Intent intent = new Intent(context, DetailsScreen.class);
                 intent.putExtra("image_url",newProductList.get(newProductViewHolder.getAdapterPosition()).getImage_url());
+                intent.putExtra("id",newProductList.get(newProductViewHolder.getAdapterPosition()).getId());
                 intent.putExtra("name",newProductList.get(newProductViewHolder.getAdapterPosition()).getName());
                 intent.putExtra("price",newProductList.get(newProductViewHolder.getAdapterPosition()).getPrice());
                 intent.putExtra("description",newProductList.get(newProductViewHolder.getAdapterPosition()).getDescription());

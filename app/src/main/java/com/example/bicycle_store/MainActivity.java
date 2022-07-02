@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
     List<NewProduct> newProductList;
     List<MainProduct> mainProductList;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             JSONArray jsonArray = jsonObject.getJSONArray("xeDap");
             for(int i = 0 ; i <= 15 ; i += 3){
                 JSONObject xedapData = jsonArray.getJSONObject(i);
-                NewProduct product = new NewProduct(xedapData.getString("name"),xedapData.getString("price"),xedapData.getString("category"),xedapData.getString("image_url"),xedapData.getString("description"));
+                NewProduct product = new NewProduct(xedapData.getString("id"),xedapData.getString("name"),xedapData.getString("price"),xedapData.getString("category"),xedapData.getString("image_url"),xedapData.getString("description"));
                 newProductList.add(product);
             }
         } catch (JSONException e) {
@@ -76,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
             JSONArray jsonArray = jsonObject.getJSONArray("xeDap");
             for(int i = 0 ; i < jsonArray.length() ; i++){
                 JSONObject xedapData = jsonArray.getJSONObject(i);
-                MainProduct product = new MainProduct(xedapData.getString("name"),xedapData.getString("price"),xedapData.getString("category"),xedapData.getString("image_url"),xedapData.getString("description"));
+                MainProduct product = new MainProduct(xedapData.getString("id"),xedapData.getString("name"),xedapData.getString("price"),xedapData.getString("category"),xedapData.getString("image_url"),xedapData.getString("description"));
                 mainProductList.add(product);
             }
         } catch (JSONException e) {
@@ -90,7 +91,6 @@ public class MainActivity extends AppCompatActivity {
         mainProductRecyclerAdapter.notifyDataSetChanged();
 
         // get location for the chain store
-
         ImageView locationView = findViewById(R.id.location);
         locationView.setOnClickListener(new View.OnClickListener() {
             @Override

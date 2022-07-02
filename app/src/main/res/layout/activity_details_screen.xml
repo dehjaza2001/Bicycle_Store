@@ -117,12 +117,12 @@
         android:id="@+id/detail_cate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="4dp"
         android:text="xe dia hinh"
         android:textColor="#8A8787"
         android:textSize="15sp"
-        android:textStyle="italic"
+        android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detail_name" />
 

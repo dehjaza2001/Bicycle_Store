@@ -15,8 +15,8 @@ import com.bumptech.glide.Glide;
 
 public class DetailsScreen extends AppCompatActivity {
     TextView productName, productPrice , productDes , productCate;
-    ImageView productPic , backButton;
-    Button addToCart;
+    ImageView productPic , backButton ;
+    Button addToCart, buyNow;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +32,7 @@ public class DetailsScreen extends AppCompatActivity {
         // productCate = findViewById(R.id.detail_cate);
         productDes.setMovementMethod(new ScrollingMovementMethod());
 
+
         productName.setText(intent.getStringExtra("name"));
         productPrice.setText(intent.getStringExtra("price") + " VNĐ");
         productDes.setText(intent.getStringExtra("description"));
@@ -41,9 +42,11 @@ public class DetailsScreen extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(DetailsScreen.this,MainActivity.class);
-                startActivity(intent1);
                 finish();
+//                Intent intent1 = new Intent(DetailsScreen.this,MainActivity.class);
+//                finish();
+//                startActivity(intent1);
+
             }
         });
 
@@ -52,11 +55,21 @@ public class DetailsScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(DetailsScreen.this, "ADDED TO CART", Toast.LENGTH_SHORT).show();
-                Intent intent1 = new Intent(DetailsScreen.this,MainActivity.class);
-                startActivity(intent1);
+//                Intent intent1 = new Intent(DetailsScreen.this,MainActivity.class);
+//                startActivity(intent1);
                 finish();
             }
         });
+
+        buyNow = findViewById(R.id.buyNow);
+        buyNow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(DetailsScreen.this, "THANKS FOR PURCHASED", Toast.LENGTH_SHORT).show();
+                finish();
+            }
+        });
+
 
     }
 }
