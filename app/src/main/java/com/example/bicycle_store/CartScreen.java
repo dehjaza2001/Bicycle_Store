@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -22,8 +24,9 @@ public class CartScreen extends AppCompatActivity {
     private RecyclerView cartProductRecyclerView;
     CartProductRecyclerAdapter cartProductRecyclerAdapter;
     List<MainProduct> cartProductList;
-
-    ImageView backButton ;
+    ImageView backButton;
+    TextView cartEmpty;
+    Button checkout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,19 +47,13 @@ public class CartScreen extends AppCompatActivity {
         cartProductList = obj.getListProduct();
         Log.d("tinguyen", cartProductList.toString());
 
-
-//        try {
-//            JSONObject jsonObject = new JSONObject(JsonDataFromAsset(getApplicationContext(),"data.json"));
-//            JSONArray jsonArray = jsonObject.getJSONArray("xeDap");
-            for(int i = 0 ; i < cartProductList.size() ; i++){
-                MainProduct xedapData = cartProductList.get(i);
-                Log.d("TAG",
-                        xedapData.getName());
-//                mainProductList.add(product);
-            }
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        }
+        checkout = findViewById(R.id.checkout);
+        cartEmpty = findViewById(R.id.cartEmpty);
+        if (cartProductList.size() > 0) {
+            cartEmpty.setVisibility(View.GONE);
+        } else {
+            checkout.setVisibility(View.GONE);
+        }
 
         cartProductRecyclerAdapter = new CartProductRecyclerAdapter(this,cartProductList);
         cartProductRecyclerView.setHasFixedSize(true);
