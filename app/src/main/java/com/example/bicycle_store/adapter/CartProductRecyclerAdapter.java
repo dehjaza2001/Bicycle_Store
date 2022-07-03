@@ -17,29 +17,28 @@ import com.example.bicycle_store.DetailsScreen;
 import com.example.bicycle_store.R;
 import com.example.bicycle_store.model.MainProduct;
 
-import java.util.ArrayList;
+import java.util.List;
 
-public class MainProductRecyclerAdapter extends RecyclerView.Adapter<MainProductRecyclerAdapter.MainProductViewHolder> {
+public class CartProductRecyclerAdapter extends RecyclerView.Adapter<CartProductRecyclerAdapter.CartProductViewHolder> {
     private Context context;
+    private List<MainProduct> mainProductList;
 
-    private ArrayList<MainProduct> mainProductList;
-
-    public MainProductRecyclerAdapter(Context context, ArrayList<MainProduct> mainProductList) {
+    public CartProductRecyclerAdapter(Context context, List<MainProduct> mainProductList) {
         this.context = context;
         this.mainProductList = mainProductList;
     }
 
     @Override
-    public MainProductRecyclerAdapter.MainProductViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
+    public CartProductRecyclerAdapter.CartProductViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
         View view;
         LayoutInflater inflater = LayoutInflater.from(context);
-        view = inflater.inflate(R.layout.main_product_recycler_items,parent,false);
-        final MainProductRecyclerAdapter.MainProductViewHolder viewHolder = new MainProductRecyclerAdapter.MainProductViewHolder(view);
+        view = inflater.inflate(R.layout.cart_product_recycler_items,parent,false);
+        final CartProductRecyclerAdapter.CartProductViewHolder viewHolder = new CartProductRecyclerAdapter.CartProductViewHolder(view);
         return viewHolder;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MainProductRecyclerAdapter.MainProductViewHolder mainProductViewHolder, int i) {
+    public void onBindViewHolder(@NonNull CartProductRecyclerAdapter.CartProductViewHolder mainProductViewHolder, int i) {
         mainProductViewHolder.BicName.setText(mainProductList.get(i).getName());
         mainProductViewHolder.price.setText(mainProductList.get(i).getPrice());
         mainProductViewHolder.category.setText(mainProductList.get(i).getCategory());
@@ -55,7 +54,6 @@ public class MainProductRecyclerAdapter extends RecyclerView.Adapter<MainProduct
                 intent.putExtra("price",mainProductList.get(mainProductViewHolder.getAdapterPosition()).getPrice());
                 intent.putExtra("category",mainProductList.get(mainProductViewHolder.getAdapterPosition()).getCategory());
                 intent.putExtra("description",mainProductList.get(mainProductViewHolder.getAdapterPosition()).getDescription());
-                intent.putExtra("index", mainProductViewHolder.getAdapterPosition());
                 context.startActivity(intent);
             }
         });
@@ -65,12 +63,12 @@ public class MainProductRecyclerAdapter extends RecyclerView.Adapter<MainProduct
     public int getItemCount() {
         return mainProductList.size();
     }
-    public static class MainProductViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    public static class CartProductViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         ImageView itemImage;
         TextView price, BicName , category;
         LinearLayout linearLayout_main_product;
 
-        public MainProductViewHolder(View itemView) {
+        public CartProductViewHolder(View itemView) {
             super(itemView);
             linearLayout_main_product = itemView.findViewById(R.id.main_product);
             itemImage = itemView.findViewById(R.id.bicImageView);
@@ -84,14 +82,4 @@ public class MainProductRecyclerAdapter extends RecyclerView.Adapter<MainProduct
 
         }
     }
-
-    public void filterList(ArrayList<MainProduct> filterlist) {
-        // below line is to add our filtered
-        // list in our course array list.
-        mainProductList = filterlist;
-        // below line is to notify our adapter
-        // as change in recycler view data.
-        notifyDataSetChanged();
-    }
-
 }

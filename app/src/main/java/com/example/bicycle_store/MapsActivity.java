@@ -1,6 +1,5 @@
 package com.example.bicycle_store;
 
-import androidx.camera.core.Camera;
 import androidx.fragment.app.FragmentActivity;
 
 import android.os.Bundle;
@@ -63,7 +62,5 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker((new MarkerOptions().position(store4).title("Store 4")));
         mMap.addMarker((new MarkerOptions().position(store5).title("Store 5")));
         mMap.addMarker((new MarkerOptions().position(hcmus).title("Main Store")));
-
-
     }
 }

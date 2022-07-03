@@ -37,7 +37,6 @@ public class NewProductRecyclerAdapter extends RecyclerView.Adapter<NewProductRe
         view = inflater.inflate(R.layout.new_product_recycler_items,parent,false);
         final NewProductViewHolder viewHolder = new NewProductViewHolder(view);
         return viewHolder;
-
     }
 
     @Override

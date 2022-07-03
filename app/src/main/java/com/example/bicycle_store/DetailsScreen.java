@@ -29,9 +29,7 @@ public class DetailsScreen extends AppCompatActivity {
         productPic = findViewById(R.id.detail_image_view);
         productCate = findViewById(R.id.detail_cate);
         backButton = findViewById(R.id.back_button);
-        // productCate = findViewById(R.id.detail_cate);
         productDes.setMovementMethod(new ScrollingMovementMethod());
-
 
         productName.setText(intent.getStringExtra("name"));
         productPrice.setText(intent.getStringExtra("price") + " VNĐ");
@@ -56,7 +54,8 @@ public class DetailsScreen extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(DetailsScreen.this, "ADDED TO CART", Toast.LENGTH_SHORT).show();
 //                Intent intent1 = new Intent(DetailsScreen.this,MainActivity.class);
-//                startActivity(intent1);
+//                startActivity(intent1)
+                ObservableImpl.INSTANCE.postMessage(1, getIntent().getIntExtra("index", -1));
                 finish();
             }
         });

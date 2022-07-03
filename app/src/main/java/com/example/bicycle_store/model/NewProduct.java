@@ -58,7 +58,6 @@ public class NewProduct {
         this.description = description;
     }
 
-
     public NewProduct(String name, String price, String category, String image_url, String description , String id) {
         this.name = name;
         this.price = price;
